@@ -22,6 +22,7 @@ GameObject:
   - component: {fileID: 33552364070193794}
   - component: {fileID: 64963495659710148}
   - component: {fileID: 23583051999388780}
+  - component: {fileID: 114534185260361766}
   m_Layer: 0
   m_Name: BulletHole1
   m_TagString: Untagged
@@ -91,9 +92,20 @@ MeshCollider:
   m_GameObject: {fileID: 1731410724187254}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Convex: 0
   m_CookingOptions: 14
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &114534185260361766
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1731410724187254}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bc68442b32ed64c5799f39c6c6630b97, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
