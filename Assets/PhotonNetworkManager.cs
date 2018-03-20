@@ -26,6 +26,12 @@ public class PhotonNetworkManager : Photon.PunBehaviour {
     {
         PhotonNetwork.Instantiate(player.name, spawnPoint.position, spawnPoint.rotation, 0);
         lobbyCamera.SetActive(false);
+
+        if(Input.GetKey(KeyCode.Backslash))
+        {
+            PhotonNetwork.Disconnect();
+            Application.Quit();
+        }
     }
 
     // Update is called once per frame
@@ -33,4 +39,9 @@ public class PhotonNetworkManager : Photon.PunBehaviour {
     {
         connectText.text = PhotonNetwork.connectionStateDetailed.ToString();
 	}
+
+    void OnApplicationQuit()
+    {
+        PhotonNetwork.Disconnect();
+    }
 }
