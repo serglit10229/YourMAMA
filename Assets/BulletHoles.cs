@@ -20,10 +20,10 @@ public class BulletHoles : MonoBehaviour {
 	void Update()
 	{
 
-		if(Input.GetButton("Fire1") && Time.time >= nextTimeToFire)
+		if(Input.GetMouseButton(0) && Time.time >= nextTimeToFire)
 		{
 			nextTimeToFire = Time.time + 1f/fireRate;
-			gun.GetComponent<AnimationController>().anim["Fire"].speed = fireRate;
+			//gun.GetComponent<AnimationController>().anim["Fire"].speed = fireRate;
 			Shoot();
 		}
 
@@ -56,7 +56,7 @@ public class BulletHoles : MonoBehaviour {
             //gun.GetComponent<Animation>().Stop();
             //muzzleFlash.Stop();
 		}
-		gun.GetComponent<Animation>().CrossFade("Idle");
+		//gun.GetComponent<Animation>().CrossFade("Idle");
 	}
 	/*
     public GameObject[] bulletTex;
