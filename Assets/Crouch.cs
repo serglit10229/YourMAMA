@@ -13,7 +13,7 @@ public class Crouch : MonoBehaviour {
 	void Update () {
 		if(Input.GetKey(KeyCode.LeftAlt))
 		{
-			characterController.height = 1f;
+			characterController.height = 0.5f;
 		}
 		else
 		{

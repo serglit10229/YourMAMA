@@ -15,7 +15,7 @@ MonoBehaviour:
   VoiceAppID: 
   ChatAppID: 
   HostType: 1
-  PreferredRegion: 1
+  PreferredRegion: 6
   EnabledRegions: -1
   Protocol: 0
   ServerAddress: 192.168.0.40
