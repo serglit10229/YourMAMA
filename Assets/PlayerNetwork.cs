@@ -5,6 +5,7 @@ using UnityEngine;
 public class PlayerNetwork : MonoBehaviour {
 
     [SerializeField] private GameObject playerCamera;
+    [SerializeField] private GameObject playerCamera2;
     [SerializeField] private MonoBehaviour[] playerControlScripts;
 
     private PhotonView photonView;
